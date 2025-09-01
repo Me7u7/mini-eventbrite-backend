@@ -10,3 +10,7 @@ connectMongo().then(() => {
     console.error(`[DB] Failed to connect:${err}`)
     process.exit(1);
 });
+
+import { connectDB } from './db/mongo.js';
+
+connectDB();
