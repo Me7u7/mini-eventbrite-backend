@@ -33,4 +33,5 @@ export const env = {
     } else if(!env[k]){
         console.warn(`[WARN] Missing env var for ${k}`);
     }
+}
 });
