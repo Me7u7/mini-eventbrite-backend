@@ -1,25 +1,19 @@
 {
-  "name": "mini-eventbrite-backend",
+  "name": "mini-enevntbrite-backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon --exec node src/server.js",
+    "start": "node src/server.js",
+    "build": "echo 'No build step needed for Node ESM'"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Me7u7/mini-eventbrite-backend.git"
-  },
-  "keywords": [],
-  "author": "",
+  "keywords": ["express", "nodemon", "JWT", "Token", "Server"],
+  "author": "Daniel Gloria Florencio",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Me7u7/mini-eventbrite-backend/issues"
-  },
-  "homepage": "https://github.com/Me7u7/mini-eventbrite-backend#readme",
-  "description": "",
+  "description": "Este es un proyecto dedicado al uso lúdico, para la creación de una boletera para eventos, cuyo desarrollo va orientado a un producto minimo viable para backend",
   "dependencies": {
-    "@supabase/supabase-js": "^2.56.0",
-    "bcrypt": "^6.0.0",
+    "@supabase/supabase-js": "^2.55.0",
+    "bcryptjs": "^3.0.2",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
@@ -27,10 +21,10 @@
     "express-validator": "^7.2.1",
     "helmet": "^8.1.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.18.0",
+    "mongoose": "^8.17.2",
     "morgan": "^1.10.1",
     "qrcode": "^1.5.4",
-    "zod": "^4.1.1"
+    "zod": "^4.0.17"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
