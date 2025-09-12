@@ -11,3 +11,4 @@ connectMongo().then(()=>{
     console.error(`[DB] Faild to connect ${err}`)
     process.exit(1);
 });
+

@@ -15,7 +15,7 @@ export function buildApp() {
     app.use(cookieParser());
     app.use(morgan(env.nodeEnv === 'production' ? 'combined' : 'dev'));
 
-    app.get('/health', (_req, res) => res.json({ ok: true }));
+    app.get('/healt', (_req, res) => res.json({ ok: true }));
     app.use('/api', routes);
     app.use(notFoundHandler);
     app.use(errorHandler);
